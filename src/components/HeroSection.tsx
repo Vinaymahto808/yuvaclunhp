@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import { Users, Image, MessageCircle, Video, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useAuth } from '@/hooks/useAuth';
-import heroBg from '@/assets/hero-bg.png';
+import heroBg from '@/assets/hero-bg.jpeg';
 import img1 from '@/assets/img1.png';
 import img2 from '@/assets/Screenshot 2025-12-15 at 9.36.10 PM.png';
 import img3 from '@/assets/Screenshot 2025-12-15 at 9.36.59 PM.png';
