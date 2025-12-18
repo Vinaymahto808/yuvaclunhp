@@ -1,11 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import { Image, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import img5 from '@/assets/Screenshot 2025-12-15 at 9.39.28 PM.png';
-import img1 from '@/assets/img1.png';
-import img2 from '@/assets/Screenshot 2025-12-15 at 9.36.10 PM.png';
-import img3 from '@/assets/Screenshot 2025-12-15 at 9.36.59 PM.png';
-import img4 from '@/assets/Screenshot 2025-12-15 at 9.37.38 PM.png';
 
 
 const MediaGallerySection = () => {
@@ -13,11 +8,11 @@ const MediaGallerySection = () => {
 
   // Local gallery images
   const galleryImages = [
-    { id: 1, url: img1, title: 'युवा क्लब Activities' },
-    { id: 2, url: img2, title: 'Community Event' },
-    { id: 3, url: img3, title: 'Youth Gathering' },
-    { id: 4, url: img4, title: 'Festival Celebration' },
-    { id: 5, url: img5, title: 'Team Activities' },
+    { id: 1, url: '/img1.png', title: 'युवा क्लब Activities' },
+    { id: 2, url: '/Screenshot 2025-12-15 at 9.36.10 PM.png', title: 'Community Event' },
+    { id: 3, url: '/Screenshot 2025-12-15 at 9.36.59 PM.png', title: 'Youth Gathering' },
+    { id: 4, url: '/Screenshot 2025-12-15 at 9.37.38 PM.png', title: 'Festival Celebration' },
+    { id: 5, url: '/Screenshot 2025-12-15 at 9.39.28 PM.png', title: 'Team Activities' },
   ];
 
   return (

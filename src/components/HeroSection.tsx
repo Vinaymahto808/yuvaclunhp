@@ -2,20 +2,21 @@ import { useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { Users, Image, MessageCircle, Video, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { useAuth } from '@/hooks/useAuth';
-import heroBg from '@/assets/hero-bg.png';
-import img1 from '@/assets/img1.png';
-import img2 from '@/assets/Screenshot 2025-12-15 at 9.36.10 PM.png';
-import img3 from '@/assets/Screenshot 2025-12-15 at 9.36.59 PM.png';
-import img4 from '@/assets/Screenshot 2025-12-15 at 9.37.38 PM.png';
-import img5 from '@/assets/Screenshot 2025-12-15 at 9.39.28 PM.png';    
+import { useAuth } from '@/hooks/useAuth';    
 
 const HeroSection = () => {
   const navigate = useNavigate();
   const { user } = useAuth();
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  const backgroundImages = [heroBg, img1, img2, img3, img4, img5];
+  const backgroundImages = [
+    '/hero-bg.png',
+    '/img1.png',
+    '/Screenshot 2025-12-15 at 9.36.10 PM.png',
+    '/Screenshot 2025-12-15 at 9.36.59 PM.png',
+    '/Screenshot 2025-12-15 at 9.37.38 PM.png',
+    '/Screenshot 2025-12-15 at 9.39.28 PM.png'
+  ];
 
   const heroContent = [
     {
