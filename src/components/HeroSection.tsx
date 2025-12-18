@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import { Users, Image, MessageCircle, Video, ArrowRight } from 'lucide-react';
+import { Users, Image, MessageCircle, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useAuth } from '@/hooks/useAuth';    
 
@@ -59,7 +59,6 @@ const HeroSection = () => {
   const features = [
     { icon: Image, label: 'Photo Gallery', description: 'Share moments' },
     { icon: MessageCircle, label: 'Live Chat', description: 'Connect instantly' },
-    { icon: Video, label: 'Video Hub', description: 'Watch events' },
     { icon: Users, label: 'Community', description: 'Grow together' },
   ];
 
@@ -133,13 +132,12 @@ const HeroSection = () => {
           </div>
 
           {/* Feature Cards */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 animate-slide-up" style={{ animationDelay: '0.4s' }}>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 animate-slide-up" style={{ animationDelay: '0.4s' }}>
             {features.map((feature, index) => {
               const getHref = () => {
                 switch(feature.label) {
                   case 'Photo Gallery': return '/gallery';
                   case 'Live Chat': return '/chat';
-                  case 'Video Hub': return '/videos';
                   case 'Community': return '/chat';
                   default: return '/gallery';
                 }
