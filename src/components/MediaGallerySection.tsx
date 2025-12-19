@@ -9,10 +9,10 @@ const MediaGallerySection = () => {
   // Local gallery images
   const galleryImages = [
     { id: 1, url: '/img1.png', title: 'युवा क्लब Activities' },
-    { id: 2, url: '/Screenshot 2025-12-15 at 9.36.10 PM.png', title: 'Community Event' },
-    { id: 3, url: '/Screenshot 2025-12-15 at 9.36.59 PM.png', title: 'Youth Gathering' },
-    { id: 4, url: '/Screenshot 2025-12-15 at 9.37.38 PM.png', title: 'Festival Celebration' },
-    { id: 5, url: '/Screenshot 2025-12-15 at 9.39.28 PM.png', title: 'Team Activities' },
+    { id: 2, url: '/img2.png', title: 'Community Event' },
+    { id: 3, url: '/img3.png', title: 'Youth Gathering' },
+    { id: 4, url: '/img4.png', title: 'Festival Celebration' },
+    { id: 5, url: '/img5.png', title: 'Team Activities' },
   ];
 
   return (
