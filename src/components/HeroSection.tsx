@@ -12,10 +12,10 @@ const HeroSection = () => {
   const backgroundImages = [
     '/hero-bg.png',
     '/img1.png',
-    '/Screenshot 2025-12-15 at 9.36.10 PM.png',
-    '/Screenshot 2025-12-15 at 9.36.59 PM.png',
-    '/Screenshot 2025-12-15 at 9.37.38 PM.png',
-    '/Screenshot 2025-12-15 at 9.39.28 PM.png'
+    '/img2.png',
+    '/img3.png',
+    '/img4.png',
+    '/img5.png'
   ];
 
   const heroContent = [
