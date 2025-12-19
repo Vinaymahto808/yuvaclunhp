@@ -20,7 +20,7 @@ const HeroSection = () => {
 
   const heroContent = [
     {
-      title: 'युवा क्लब',
+      title: 'युवा CLUB',
       subtitle: 'Hopna Tola',
       mainText: 'युवाओं की शक्ति, संस्कृति की पहचान',
       subText: 'समुदाय, सहयोग और संस्कार के साथ उज्ज्वल भविष्य की ओर',
@@ -29,8 +29,8 @@ const HeroSection = () => {
       badge: 'Welcome to our community'
     },
     {
-      title: 'सामुदायिक',
-      subtitle: 'एकता',
+      title: 'YUVA',
+      subtitle: 'CLUB',
       mainText: 'एकजुट समुदाय, मजबूत भविष्य',
       subText: 'सांस्कृतिक उत्सवों और सामुदायिक सेवा के माध्यम से मजबूत रिश्ते बनाना',
       actionText: 'सेवा • सहयोग • समर्पण',
@@ -40,17 +40,17 @@ const HeroSection = () => {
     {
       title: 'युवा',
       subtitle: 'शक्ति',
-      mainText: 'नेतृत्व की नई पीढ़ी',
+      mainText: 'नेतृत्वी',
       subText: 'युवाओं को सशक्त बनाना, नेतृत्व विकसित करना और सार्थक संबंध बनाना',
       actionText: 'नेतृत्व • विकास • प्रगति',
-      welcomeText: 'युवा शक्ति के साथ नए कल का निर्माण करें।',
+      welcomeText: 'युवा शक्ति के साथ नए कल ',
       badge: 'Youth Power'
     }
   ];
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % backgroundImages.length);
+      setCurrentSlide((prev) => (prev + 3) % backgroundImages.length);
     }, 4000);
 
     return () => clearInterval(interval);
@@ -59,14 +59,14 @@ const HeroSection = () => {
   const features = [
     { icon: Image, label: 'Photo Gallery', description: 'Share moments' },
     { icon: MessageCircle, label: 'Live Chat', description: 'Connect instantly' },
-    { icon: Users, label: 'Community', description: 'Grow together' },
+    { icon: Users, label: 'Community', description: 'Grow ' },
   ];
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16 md:pt-20">
       {/* Background Image */}
       <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-all duration-1000"
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-all duration-500"
         style={{ backgroundImage: `url(${backgroundImages[currentSlide]})` }}
       >
         <div className="absolute inset-0 bg-gradient-to-b from-slate-dark/80 via-slate-dark/60 to-slate-dark/90" />
